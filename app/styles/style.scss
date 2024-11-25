@@ -43,28 +43,28 @@ ul {
 .header {
   margin: $margin-m $margin-l;
 
-  & .nav__items {
+  & .header__link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  & .nav__item {
-    cursor: pointer;
+  & .link__icon {
+    width: 8rem;
   }
 }
 
-.jordan {
+.sneakers__img {
   top: 50%;
   left: 50%;
   z-index: 1;
-  width: 80rem;
+  width: 72rem;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -50%);
 }
 
 .main {
-  margin: $margin-m $margin-l;
+  margin: 0 $margin-l $margin-m $margin-l;
 
   display: flex;
   align-items: center;
@@ -132,82 +132,22 @@ ul {
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  .main,
+@media (max-width: 1600px) {
   .header,
-  .footer {
-    margin: 0.8rem;
-  }
-
-  .jordan {
-    width: 72rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .header {
-    & .nav {
-      & .nav__items {
-        & .nav__item {
-          & .icon__logo {
-            width: 5.6rem;
-          }
-        }
-      }
-    }
-  }
-
-  .jordan {
-    width: 34rem;
-  }
-
+  .sneakers,
   .mainFooter {
-    gap: 16rem;
+    display: none;
+  }
+
+  .not-responsive {
+    display: block;
+
     display: flex;
+    height: 100vh;
+    font-size: $font-size-s;
+    font-weight: $font-weight-medium;
+    align-items: center;
     flex-direction: column;
-
-    .main {
-      & .main__cta {
-        gap: 0.8rem;
-
-        & .cta__icon {
-          width: 1.6rem;
-        }
-
-        & .cta__link {
-          font-size: 1.8rem;
-        }
-      }
-
-      & .main__model {
-        & .model__year {
-          font-size: 2.4rem;
-        }
-
-        & .model__name {
-          font-size: 2.4rem;
-        }
-      }
-    }
-
-    .footer {
-      & .footer__items {
-        gap: 3.2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        & .footer__item {
-          gap: 0.2rem;
-
-          & .item__title {
-            font-size: 1.4rem;
-          }
-
-          & .item__text {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
+    justify-content: center;
   }
 }

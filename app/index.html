@@ -11,29 +11,26 @@
     <script src="./script/main.js" defer></script>
   </head>
   <body>
+    <section class="not-responsive" hidden>
+      <p>Ooops...</p>
+      <p>Desktop only 😅</p>
+    </section>
+
     <header class="header">
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <img src="./assets/icons/nike-logo.png" alt="Logo da Nike" class="nav__icon icon__logo" />
-          </li>
-          <li class="nav__item">
-            <img src="./assets/icons/jordan-logo.png" alt="Logo do Air Jordan" class="nav__icon icon__jordan" />
-          </li>
-          <li class="nav__item">
-            <img src="./assets/icons/hamburguer-menu-icon.png" alt="ícone de Menu Hamburguer" class="nav__icon icon__menu" />
-          </li>
-        </ul>
-      </nav>
+      <a href="https://www.nike.com/jordan" class="header__link">
+        <img src="./assets/icons/jordan-logo.png" alt="Logo do Air Jordan" class="link__icon" title="Nike Air Jordan" />
+      </a>
     </header>
 
-    <img src="./assets/img/air-jordan.png" alt="Air Jordan" class="jordan" />
+    <section class="sneakers">
+      <img src="./assets/img/air-jordan.png" alt="Air Jordan" class="sneakers__img" />
+    </section>
 
     <section class="mainFooter">
       <main class="main">
         <div class="main__cta">
           <img src="./assets/icons/arrow-down-icon.png" alt="Ícone de Seta para Baixo" class="cta__icon" />
-          <a href="https://www.nike.com/jordan" class="cta__link">BUY NOW</a>
+          <a href="https://www.nike.com/jordan" class="cta__link" title="Buy Nike Air Jordan">BUY NOW</a>
         </div>
         <div class="main__model">
           <p class="model__year">2024</p>
