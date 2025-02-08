@@ -43,13 +43,13 @@ ul {
 .header {
   margin: $margin-m $margin-l;
 
-  & .header__link {
+  .header__link {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  & .link__icon {
+  .link__icon {
     width: 8rem;
   }
 }
@@ -70,17 +70,17 @@ ul {
   align-items: center;
   justify-content: space-between;
 
-  & .main__cta {
+  .main__cta {
     gap: $gap-s;
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    & .cta__icon {
+    .cta__icon {
       width: 2.4rem;
     }
 
-    & .cta__link {
+    .cta__link {
       cursor: pointer;
       color: $color-red-600;
       text-decoration: none;
@@ -89,18 +89,18 @@ ul {
     }
   }
 
-  & .main__model {
+  .main__model {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 
-    & .model__year {
+    .model__year {
       color: $color-red-600;
       font-size: $font-size-xl;
       font-weight: $font-weight-bold;
     }
 
-    & .model__name {
+    .model__name {
       font-size: $font-size-l;
       font-weight: $font-weight-medium;
     }
@@ -110,22 +110,22 @@ ul {
 .footer {
   margin: $margin-m $margin-l;
 
-  & .footer__items {
+  .footer__items {
     display: flex;
     justify-content: space-between;
 
-    & .footer__item {
+    .footer__item {
       gap: $gap-s;
       display: flex;
       align-items: center;
       flex-direction: column;
 
-      & .item__title {
+      .item__title {
         font-size: $font-size-s;
         font-weight: $font-weight-bold;
       }
 
-      & .item__text {
+      .item__text {
         font-weight: $font-weight-medium;
       }
     }
@@ -140,12 +140,10 @@ ul {
   }
 
   .not-responsive {
-    display: block;
-
-    display: flex;
     height: 100vh;
     font-size: $font-size-s;
     font-weight: $font-weight-medium;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
