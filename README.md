@@ -49,22 +49,22 @@ Uso de variáveis e aninhamento em SCSS
 .footer {
   margin: $margin-m $margin-l;
 
-  & .footer__items {
+  .footer__items {
     display: flex;
     justify-content: space-between;
 
-    & .footer__item {
+    .footer__item {
       gap: $gap-s;
       display: flex;
       align-items: center;
       flex-direction: column;
 
-      & .item__title {
+      .item__title {
         font-size: $font-size-s;
         font-weight: $font-weight-bold;
       }
 
-      & .item__text {
+      .item__text {
         font-weight: $font-weight-medium;
       }
     }
